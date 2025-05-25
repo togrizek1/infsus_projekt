@@ -1,0 +1,36 @@
+/* App.css */
+
+body,
+html,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #4a90e2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.navNameContainer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a.active {
+    border-bottom: 2px solid white;
+}

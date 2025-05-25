@@ -1,0 +1,38 @@
+.contentContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.listMember {
+    margin: 10px 0;
+    padding: 10px;
+    list-style: none;
+    background-color: #4a90e2;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.listMember:hover {
+    background-color: #378ef2;
+}
+
+.listMember a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.listMember a:hover {
+    color: white;
+    text-decoration: underline;
+}
