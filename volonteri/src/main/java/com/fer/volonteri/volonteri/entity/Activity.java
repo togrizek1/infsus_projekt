@@ -1,6 +1,7 @@
 package com.fer.volonteri.volonteri.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 
 import java.sql.Time;
 import java.util.Date;
@@ -38,6 +39,20 @@ public class Activity {
     @OneToOne
     @JoinColumn(name = "id_lokacija")
     private Location location;
+
+    public Activity(Long id, String name, ActivityStatus status, Date date, Time time, Organization organization, Statistics stats, Location location) {
+        this.id = id;
+        this.name = name;
+        this.status = status;
+        this.date = date;
+        this.time = time;
+        this.organization = organization;
+        this.stats = stats;
+        this.location = location;
+    }
+
+    public Activity() {
+    }
 
     public long getId() {
         return id;

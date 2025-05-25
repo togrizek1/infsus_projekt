@@ -4,7 +4,6 @@ import com.fer.volonteri.volonteri.dto.ActivityDetailDto;
 import com.fer.volonteri.volonteri.dto.ActivitySummaryDto;
 import com.fer.volonteri.volonteri.dto.LocationDto;
 import com.fer.volonteri.volonteri.entity.Activity;
-import com.fer.volonteri.volonteri.entity.Location;
 import com.fer.volonteri.volonteri.service.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
