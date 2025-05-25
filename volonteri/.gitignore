@@ -1,33 +1,209 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# === Maven build output ===
+/target/
+/pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# === Wrapper logs ===
+.mvn/wrapper/maven-wrapper.log
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# === Spring Boot DevTools restart folder ===
+restart/
 
-### NetBeans ###
+# === IDE directories & files ===
+# IntelliJ IDEA
+/.idea/
+/*.iws
+/*.iml
+/*.ipr
+
+# VS Code
+/.vscode/
+
+# Eclipse
+/.settings/
+/.classpath
+/.project
+/.factorypath
+
+# NetBeans
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+/nbactions.xml
+/*.jswitch
 
-### VS Code ###
-.vscode/
+# === OS-specific ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# === Logs and temp files ===
+*.log
+*.tmp
+*.temp
+
+# === Packaged archives ===
+*.jar
+*.war
+*.ear
+
+# === Compiled classes ===
+*.class
+
+# === Other ===
+# environment files (ako ih koristiš)
+/*.env
+# === Maven build output ===
+/target/
+volonteri\target
+/pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# === Wrapper logs ===
+.mvn/wrapper/maven-wrapper.log
+
+# === Spring Boot DevTools restart folder ===
+restart/
+
+# === IDE directories & files ===
+# IntelliJ IDEA
+/.idea/
+/*.iws
+/*.iml
+/*.ipr
+
+# VS Code
+/.vscode/
+
+# Eclipse
+/.settings/
+/.classpath
+/.project
+/.factorypath
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/*.jswitch
+
+# === OS-specific ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# === Logs and temp files ===
+*.log
+*.tmp
+*.temp
+
+# === Packaged archives ===
+*.jar
+*.war
+*.ear
+
+# === Compiled classes ===
+*.class
+
+# === Other ===
+# environment files (ako ih koristiš)
+/*.env
+# === Maven build output ===
+/target/
+/pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# === Wrapper logs ===
+.mvn/wrapper/maven-wrapper.log
+
+# === Spring Boot DevTools restart folder ===
+restart/
+
+# === IDE directories & files ===
+# IntelliJ IDEA
+/.idea/
+/*.iws
+/*.iml
+/*.ipr
+
+# VS Code
+/.vscode/
+
+# Eclipse
+/.settings/
+/.classpath
+/.project
+/.factorypath
+
+# NetBeans
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/nbactions.xml
+/*.jswitch
+
+# === OS-specific ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# === Logs and temp files ===
+*.log
+*.tmp
+*.temp
+
+# === Packaged archives ===
+*.jar
+*.war
+*.ear
+
+# === Compiled classes ===
+*.class
+
+# === Other ===
+# environment files (ako ih koristiš)
+/*.env
+

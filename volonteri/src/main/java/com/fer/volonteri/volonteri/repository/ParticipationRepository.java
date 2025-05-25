@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-public interface ParticipationRepository extends JpaRepository<Participation, Long> {
+public interface ParticipationRepository extends JpaRepository<Participation, com.fer.volonteri.volonteri.entity.ParticipationId> {
     List<Participation> findByActivityId(Long activityId);
     boolean existsByActivityIdAndUserId(Long activityId, Long userId);
     Optional<Participation> findByActivityIdAndUserId(Long activityId, Long userId);

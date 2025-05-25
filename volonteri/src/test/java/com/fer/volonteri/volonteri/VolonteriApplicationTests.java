@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.web.client.RestTemplate;
 
@@ -42,6 +43,7 @@ class VolonteriApplicationTests {
 	}
 
 	@Test
+	@DirtiesContext
 	public void testPostActivityStatus() {
 		ActivityStatus activityStatus = new ActivityStatus();
 		activityStatus.setName("AWAITING APPROVAL");
@@ -54,6 +56,7 @@ class VolonteriApplicationTests {
 	}
 
 	@Test
+	@DirtiesContext
 	@Sql(statements = "INSERT INTO aktivnost_status (id_status, naziv) VALUES (4, 'TO BE ORGANIZED')", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 	@Sql(statements = "DELETE FROM aktivnost_status WHERE naziv='TO BE ORGANIZED'", executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
 	public void testGetAllStatuses(){
@@ -63,6 +66,7 @@ class VolonteriApplicationTests {
 	}
 
 	@Test
+	@DirtiesContext
 	@Sql(statements = "INSERT INTO aktivnost_status (id_status, naziv) VALUES (4, 'TO BE ORGANIZED')", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 	@Sql(statements = "DELETE FROM aktivnost_status WHERE naziv='TO BE ORGANIZED'", executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
 	public void testUpdateStatus(){
@@ -81,6 +85,7 @@ class VolonteriApplicationTests {
 	}
 
 	@Test
+	@DirtiesContext
 	@Sql(statements = "INSERT INTO aktivnost_status (id_status, naziv) VALUES (6, 'FINISHED')", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
 	public void testDeleteStatus(){
 		int recordCount = testRepo.findAll().size();
