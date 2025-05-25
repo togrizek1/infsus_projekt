@@ -13,6 +13,14 @@ public class ActivityStatus {
     @Column(name = "naziv", nullable = false, unique = true)
     private String name;
 
+    public ActivityStatus(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public ActivityStatus() {
+    }
+
     public Long getId() {
         return id;
     }
